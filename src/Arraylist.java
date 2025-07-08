@@ -7,7 +7,7 @@ public class Arraylist {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> list  = new ArrayList<>();
-     /*   list.add(33);
+       list.add(33);
         list.add(23);
         list.add(34);
         list.add(90);
@@ -22,7 +22,7 @@ public class Arraylist {
         System.out.println(list);
         System.out.println(list.add(87));
         System.out.println(list);
-        */
+
         System.out.println("enetr the size of arraylist" );
         int n = sc.nextInt();
         System.out.println("arraylist size is " + n);
@@ -33,8 +33,9 @@ public class Arraylist {
         }
         System.out.println(list);
         for (int i = list.size()-1; i>=0 ; i--){
-            System.out.println("reverse is "+ list.get(i));d
+            System.out.println("reverse is "+ list.get(i));
         }
         System.out.println(list);
+        System.out.println("Gaurav Kumar Pandey");
     }
 }
