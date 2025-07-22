@@ -1,7 +1,10 @@
-import com.sun.security.jgss.GSSUtil;
+package collection;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
+
+//import static jdk.internal.org.jline.utils.Colors.s;
 
 public class Arraylist {
     public static void main(String[] args) {
@@ -37,5 +40,11 @@ public class Arraylist {
         }
         System.out.println(list);
         System.out.println("Gaurav Kumar Pandey");
+
+      //  Set s = list.entrySet();
+        Iterator itr = list.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
     }
 }

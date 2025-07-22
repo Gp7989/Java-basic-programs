@@ -1,6 +1,6 @@
-import java.util.Vector;
+/*import java.util.Vector;
 
-/*import java.util.Scanner;
+import java.util.Scanner;
 import java.util.Stack;
 public class ListDemo {
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class ListDemo {
     }
 }
 
- */
+
 public class ListDemo {
     public static void main(String[] args) {
         Vector<Integer> list =new  Vector<>(11);
@@ -43,3 +43,5 @@ public class ListDemo {
         System.out.println(list);
     }
 }
+
+ */
