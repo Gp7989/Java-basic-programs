@@ -184,6 +184,8 @@ public class practice {
     }}
  */
 import java.sql.SQLOutput;
+import java.util.Scanner;
+
 /*
 import java.util.Scanner;
 public class practice {
@@ -396,14 +398,165 @@ public class practice {
     }
 }
 
+
+public class practice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        //-------------------------------array1----------------------------------------
+        System.out.println("Enter the size of array");
+        int size1 = sc.nextInt();
+        int[] arr1 = new int[size1];
+        System.out.println("Enter the values of first array");
+        for(int i=0 ; i<size1 ; i++){
+            System.out.println("Enter value" + (i+1));
+            arr1[i] = sc.nextInt();
+        }
+        System.out.println("array 1 created");
+        /*System.out.println("Array1:");
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println(arr1[i] + " ");
+        }
+
+        //------------------------------array2---------------------------------------
+        System.out.println("Enter the size of array");
+        int size2 = sc.nextInt();
+        int[] arr2 = new int[size2];
+
+        System.out.println("Enter the values of first array");
+        for(int i=0 ; i<size2 ; i++){
+            System.out.println("Enter value" + (i+1));
+            arr2[i] = sc.nextInt();
+        }
+        System.out.println("array 2 created");
+        /*System.out.println("array2");
+        for (int i = 0; i < arr2.length; i++) {
+            System.out.println(arr2[i] + " ");
+        }
+
+
+        //-------------------------------merged------------------------------------
+        int[] merged = new int[size1+size2];
+        for (int i=0 ; i<size1 ;i++){
+            merged[i] = arr1[i];
+        }
+        for (int i=0 ; i<size2 ; i++){
+            merged[i+size2] = arr2[i];
+        }
+
+        System.out.println("Merged Array:");
+        for (int i = 0; i < merged.length; i++) {
+            System.out.print(merged[i] + " ");
+        }
+    }
+}
+
+
  */
+/*
 
+import java.util.Scanner;
 
+public class practice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        int[][] matrix = new int[3][3];
+        int[][] transpose = new int[3][3];
 
+        System.out.println("Enter elements of 3x3 matrix:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print("Element [" + i + "][" + j + "]: ");
+                matrix[i][j] = sc.nextInt();
+            }
+        }
 
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                transpose[i][j] = matrix[j][i];
+            }
+        }
 
+        System.out.println("Original Matrix:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(matrix[i][j] + "\t");
+            }
+            System.out.println();
+        }
 
+        System.out.println("\nTransposed Matrix:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(transpose[i][j] + "\t");
+            }
+            System.out.println();
+        }
 
-
-
+        sc.close();
+}
+}
+*/
+/*
+public class practice {
+    public static void main(String[] args) {
+        char arr[] = {'G', 'A' , 'U' , 'R' , 'A' ,'V'};
+        char arr2[] = {'p'};
+        System.out.println(arr);
+        String obj = new String(arr);
+        String obj2 = new String(arr2);
+        System.out.println(obj);
+       String fullname = obj + obj2 ;
+        System.out.println(fullname);
+    }
+}
+ */
+//public class practice {
+//    public static void main(String[] args) {
+//        StringBuilder name = new StringBuilder("GauaG") ;
+//      //  name.append(" kumar ");
+//       // name.append("Pandey");
+//        String name1 = name.toString();
+//        System.out.println(name);
+//        StringBuilder str1 = new StringBuilder(name.reverse().toString());
+//    //    System.out.println(name.reverse());
+////System.out.println(name.reverse());
+//        if(name1.toString().equals(str1.toString())  ){
+//            System.out.println("name is palindrome ");
+//        }
+//        else {
+//            System.out.println("not palindrome");
+//        }
+//
+//    }
+//
+//}
+//import java.util.Scanner;
+//public class practice {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("enter days name for know timing of wake up ");
+//        String day = sc.next();
+//        String result = switch (day)
+//        {
+//            case "monday" , "Tuesday" , "Wednesday" -> "7am";
+//            case "thrusday", "Friday" -> "8am" ;
+//            case "saturday " , "sunday " -> "10am";
+//            default -> "enter cor'rect name ";
+//        };
+//        System.out.println(result);
+//
+//        switch (day) {
+//            case "monday" , "tuesday" :
+//                System.out.println("7am");
+//                break;
+//            case "wednesday":
+//                System.out.println("8am");
+//                break;
+//            default :
+//            System.out.println("9am");
+//        }
+//    }
+//}
+//

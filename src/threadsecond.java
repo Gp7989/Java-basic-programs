@@ -20,6 +20,7 @@ public class threadsecond implements Runnable {
             @Override
                     public void run() {
                 System.out.println("thread1");
+
             }
         };
         Thread obj2 = new Thread(){
@@ -31,6 +32,7 @@ public class threadsecond implements Runnable {
        Thread obj3 = new Thread(){
            @Override
            public void run(){
+               System.out.println("obj 3 ");
                System.out.println(sum(sc.nextInt(),sc.nextInt()));
 
            }
@@ -39,8 +41,19 @@ public class threadsecond implements Runnable {
         threadsecond rn = new threadsecond();
         Thread rn2 = new Thread(rn);
         rn2.start();
-        obj2.start();
-        obj.start();
         obj3.start();
+        obj.start();
+        while (obj.isAlive()){
+            System.out.println(" obj3 run in bc");
+        }
+
+
+        obj2.start();
+
+        System.out.println(obj.getName());
+        System.out.println(obj3.getPriority());
+        System.out.println(obj2.getState());
+        obj2.setPriority(3);
+        System.out.println(obj2.getPriority());
     }
 }
